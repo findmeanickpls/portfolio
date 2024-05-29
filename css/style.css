@@ -1,0 +1,283 @@
+body{
+
+}
+
+nav {
+    height: 70px;
+    background: #f6f7fb ;
+    color: rgb(209, 209, 209);
+    color: rgb(220, 220, 220);
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: sticky; */
+    top: 0;
+  }
+
+  nav svg {
+    display: none;
+  }
+
+  .logo.img{
+    width: 10px;
+    cursor: pointer;
+   margin-top: 40px;
+   margin-left: 8px;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .overview,
+.account {
+  display: flex;
+}
+.overview {
+  margin-right: 4rem;
+}
+.nav-items h3 {
+  display: none;
+}
+nav li {
+  list-style: none;
+  margin: 0 0.5rem;
+}
+nav a {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: black;
+  color: black;
+  padding-left: 20px;
+}
+nav a:hover {
+  color: #a0ebfd;
+}
+
+nav a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #a0ebfd;
+    width: 0%;
+    transition: all ease-in-out 300ms;
+  }
+  nav a:hover::after {
+    width: 100%;
+  }
+  #check,
+  .menu {
+    display: none;
+  }
+  /* Hero section */
+  /* .hero-section {
+    height: 100vh;
+    background: url("hero-bg.jpg") center no-repeat;
+    background-size: cover;
+  } */
+
+  .container-fluid.con1{
+    background-color:#f6f7fb ;
+  padding: 0px;
+  margin: 0px;
+
+  }
+
+.headcontent{
+  background-color: #f6f7fb ;
+  height: 900px;
+ 
+}
+.img1{
+  margin-top: 50px;
+  padding: 0px;
+  
+  
+}
+h1{
+  font-size: 60px;
+}
+
+.text{
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.text2{
+  font-size: 15px;
+  margin-top: -10px;
+  color: rgba(19, 15, 15, 0.521);
+}
+.text2 button{
+width: 160px;
+height: 45px;
+border-radius: 10px;
+background-color:#784cfb ;
+border: none;
+margin-top: 20px;
+color: white;
+}
+  .Header{
+    margin-top: 300px;
+  }
+  
+.servicetext{
+  padding-top: 80px;
+  text-align: center;
+ 
+}
+.servicetext p{
+  margin-bottom: -1PX;
+  font-size: 20px;
+  
+}
+
+.box1{
+  background-color: #f6f7fb;
+  height: 510px;
+}
+
+.web{
+  text-align: center;
+  padding-top: 80px;
+}
+.webtext{
+  text-align: center;
+  margin-top: 20px
+  
+}
+.webtext h3{
+  font-size: ;
+  font-weight: bold;
+}
+.webcontent{
+  font-size: 20px;
+  margin-top: 20px;
+  color: rgba(19, 15, 15, 0.521);
+}
+.webbtn button{
+  margin-top: 30px;
+  background-color:#784cfb ;
+  border: none;
+  width: 120px;
+  height: 45px;
+  border-radius: 10px;
+ 
+  
+}
+.webbtn a{
+  text-decoration: none;
+  color: white;
+}
+
+.app{
+  text-align: center;
+  padding-top: 80px;
+}
+.box2{
+  background-color: #f6f7fb;
+  height: 510px;
+}
+
+.appbtn button{
+  margin-top: 15px;
+  background-color:#784cfb ;
+  border: none;
+  width: 120px;
+  height: 45px;
+  border-radius: 10px;
+}
+.appbtn a{
+  text-decoration: none;
+  color: white;
+}
+
+.box3{
+  background-color: #f6f7fb;
+  height: 510px;
+}
+
+.ios{
+  text-align: center;
+  padding-top: 80px;
+}
+
+  /* .container{
+    height:10px ;
+  } */
+
+.secoond{
+  margin-top: 50px;
+}
+
+/* responsivness */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+@media (max-width: 750px) {
+  .nav-items {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: rgb(20, 20, 20);
+    padding: 2rem;
+    right: -250px;
+    transition: all ease-in-out 500ms;
+  }
+  .overview,
+  .account {
+    flex-direction: column;
+    width: auto;
+  }
+  .overview {
+    margin: 0;
+  }
+  .nav-items h3 {
+    display: inline-block;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 1rem;
+  }
+  nav svg {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+  }
+  nav li {
+    margin: 1rem 0;
+  }
+  nav a {
+    display: inline-block;
+  }
+  nav a:hover {
+    margin-left: 2px;
+    transition: all ease-in-out 300ms;
+  }
+  .menu {
+    display: inline-block;
+    position: fixed;
+    right: 2.5rem;
+    z-index: 99;
+  }
+  #check:checked ~ .nav-items {
+    right: 0;
+  }
+}
+
+
+
+
+
